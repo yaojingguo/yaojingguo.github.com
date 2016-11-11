@@ -7,6 +7,31 @@ tags: []
 ---
 {% include JB/setup %}
 
+# Ethernet
+## RFC 894 vs RFC 1042
+_2.2 Ethernet and IEEE 802 Encapsulation_ of _TCP/IP Illustrated, Vol. 1: The
+Protocols (Addison-Wesley Professional Computing Series) 1st Edition_ says:
+
+> RFC 894 encapsulation is most commonly used.
+
+And [Ethernet_frame][1] says:
+
+> Ethernet II frame, or Ethernet Version 2,[g] or DIX frame is the most common
+> type in use today, as it is often used directly by the Internet Protocol.
+
+Ethernet II frame means a RFC 894 frame. [Ethernet_frame][1] also says:
+
+> There exists an Internet standard for encapsulating IPv4 traffic in IEEE 802.2
+> LLC SAP/SNAP frames.[13] It is almost never implemented on Ethernet, although
+> it is used on FDDI, Token Ring, IEEE 802.11 [clarification needed] and other
+> IEEE 802 LANs.
+
+IEEE 802.2 LLC SAP/SNAP frames are RFC 1042 frame. So it seems that RFC 894 is
+more much widely used than RFC 1042.
+
+
+  [1]: https://en.wikipedia.org/wiki/Ethernet_frame "Ethernet_frame"
+
 # TCP 
 
 [TCP Flags: PSH and URG](http://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/)
