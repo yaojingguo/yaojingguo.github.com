@@ -15,3 +15,6 @@ brew install postgres
 # postgres is a built-in database.
 psql postgres
 ```
+$$
+a^2 = b^2 + c^2
+$$
