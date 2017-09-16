@@ -30,7 +30,8 @@ brew cask install java
 brew cask install mactex
 ```
 
-Install `Docker for Mac` from `www.docker.com`.
+```
+"Docker for Mac" from www.docker.com.
 OmniGraffle
 Acrobat Reader
 Chrome Browser
@@ -47,3 +48,4 @@ Weixin
 Shadowsocks
 Proxifier
 Baidu Pan
+```
