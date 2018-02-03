@@ -22,3 +22,8 @@ Remove PostgreSQL files:
 ```
 rm -rf /usr/local/var/postgres
 ```
+
+```
+createdb mydb
+psql mydb
+```

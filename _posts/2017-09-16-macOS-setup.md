@@ -49,3 +49,8 @@ Shadowsocks
 Proxifier
 Baidu Pan
 ```
+
+## Java
+After using `brew cask install java` to install Java, Java updater will update Java. But Java updater will only update Java in
+`/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin` whose version can be checked with `System Preferences->Java Control Panel`. It will
+not touch Java in `/Library/Java/JavaVirtualMachines`.
