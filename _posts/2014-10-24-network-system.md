@@ -2,7 +2,7 @@
 layout: post
 title: "Network System"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -32,7 +32,7 @@ more much widely used than RFC 1042.
 
   [1]: https://en.wikipedia.org/wiki/Ethernet_frame "Ethernet_frame"
 
-# TCP 
+# TCP
 
 [TCP Flags: PSH and URG](http://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/)
 
@@ -52,8 +52,8 @@ One TCP connnection has one RTO timer.
 - [Computing the Internet Checksum](https://tools.ietf.org/html/rfc1071)
 - [IP checksum definition](http://www.netfor2.com/checksum.html)
 
-For the following `back udp cksum` error in the data captured by tcpdump, [UDP / 
-TCP Checksum errors from tcpdump & NIC Hardware 
+For the following `back udp cksum` error in the data captured by tcpdump, [UDP /
+TCP Checksum errors from tcpdump & NIC Hardware
 Offloading](http://sokratisg.net/2012/04/01/udp-tcp-checksum-errors-from-tcpdump-nic-hardware-offloading/) has a good explanation.  
 
 ```
@@ -77,9 +77,9 @@ wlan0     Link encap:Ethernet  HWaddr 7c:7a:91:bf:de:3e
           inet addr:10.62.32.163  Bcast:10.62.47.255  Mask:255.255.240.0
           inet6 addr: fe80::7e7a:91ff:febf:de3e/64 Scope:Link
 ```
-Consider a server and a client which are running on the same machine. Moninoring 
-with tcpdump draws the following conclusion. Whatever ip (127.0.0.1 or 
-10.62.32.163) the client use to connnect to the server, the lo interface is used. 
+Consider a server and a client which are running on the same machine. Moninoring
+with tcpdump draws the following conclusion. Whatever ip (127.0.0.1 or
+10.62.32.163) the client use to connnect to the server, the lo interface is used.
 
 # IETF
 - [Idnits Tool](https://tools.ietf.org/tools/idnits/about)
@@ -89,3 +89,13 @@ with tcpdump draws the following conclusion. Whatever ip (127.0.0.1 or
 - [HTTP Over TLS RFC](http://tools.ietf.org/html/rfc2818)
 - [TLS 1.2 RFC](http://tools.ietf.org/html/rfc5246)
 - [TLS Wikipedia](http://en.wikipedia.org/wiki/Transport_Layer_Security)
+
+### HTTPS Certificates
+- [Chain of trust](https://en.wikipedia.org/wiki/Chain_of_trust)
+- [What is the SSL Certificate Chain?](https://support.dnsimple.com/articles/what-is-ssl-certificate-chain/)
+- [Root certificate](https://en.wikipedia.org/wiki/Root_certificate)
+- [Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile](https://tools.ietf.org/html/rfc5280)
+
+- [Certificate Binary Posters (Part One)](https://www.cem.me/20141221-cert-binaries.html)
+- [Certificate Binary Posters (Part Two)](https://www.cem.me/20150104-cert-binaries-2.html)
+- [PKCS #1: RSA Cryptography Specifications Version 2.2](https://tools.ietf.org/html/rfc8017)
