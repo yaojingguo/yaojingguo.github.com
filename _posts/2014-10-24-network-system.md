@@ -85,6 +85,22 @@ with tcpdump draws the following conclusion. Whatever ip (127.0.0.1 or
 - [Idnits Tool](https://tools.ietf.org/tools/idnits/about)
 - [IETTF Draft Tool xml2rfc](http://xml2rfc.ietf.org/)
 
+Base 64:
+- [Class Base64](https://docs.oracle.com/javase/8/docs/api/java/util/Base64.html)
+- [RFC2045](https://tools.ietf.org/html/rfc2045)
+- [RFC4648](https://tools.ietf.org/html/rfc4648)
+
+```
+{1}: AQ==
+0000 00,01 0000
+
+{1, 2}: AQI=
+0000 00,01 0000, 00010 00
+
+{1, 2, 3}: AQID
+0000 00,01 0000, 00010 00,00 0011
+```
+
 # HTTPS
 - [HTTP Over TLS RFC](http://tools.ietf.org/html/rfc2818)
 - [TLS 1.2 RFC](http://tools.ietf.org/html/rfc5246)
