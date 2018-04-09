@@ -3,7 +3,7 @@ layout: post
 title: "PostgreSQL"
 description: ""
 category:
-tags: []
+tags: [database]
 ---
 {% include JB/setup %}
 
