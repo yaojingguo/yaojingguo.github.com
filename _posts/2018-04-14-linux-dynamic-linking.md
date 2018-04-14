@@ -34,7 +34,7 @@ name.c:2:3: warning: implicit declaration of function ‘puts’ [-Wimplicit-fun
 Hey!
 ```
 
-`callq  400400 <puts@plt>` jumps to the first instruct of puts's PLT entry whose address is `puts@plt`. A part of `objdump- D name`:
+`callq  400400 <puts@plt>` jumps to the first instruct of puts's PLT entry whose address is `0x400400`. A part of `objdump- D name`:
 ```
 0000000000400507 <main>:
   400507: 55                    push   %rbp
@@ -47,7 +47,7 @@ Hey!
   40051c: 0f 1f 40 00           nopl   0x0(%rax)
 ```
 
-The first instruction of puts PLT entry jumps to `GOT[3]`. `601008` refers to the GOT[3]. A part of `objdump- D name`:
+The first instruction of puts PLT entry jumps to `GOT[3]` whose address is `0x601008`. A part of `objdump- D name`:
 ```
 Disassembly of section .plt:
 
@@ -73,7 +73,6 @@ Relocation section '.rela.plt' at offset 0x398 contains 2 entries:
 000000601018  000100000007 R_X86_64_JUMP_SLO 0000000000000000 puts@GLIBC_2.2.5 + 0
 000000601020  000200000007 R_X86_64_JUMP_SLO 0000000000000000 __libc_start_main@GLIBC_2.2.5 + 0
 ```
-The  relocation type for `GOT[3]` is `R_X86_64_JUMP_SLOT`.
 
 `objdump -R name` produces:
 ```
@@ -85,6 +84,8 @@ OFFSET           TYPE              VALUE
 0000000000601018 R_X86_64_JUMP_SLOT  puts@GLIBC_2.2.5
 0000000000601020 R_X86_64_JUMP_SLOT  __libc_start_main@GLIBC_2.2.5
 ```
+
+The  relocation type for `GOT[3]` is `R_X86_64_JUMP_SLOT`.
 
 `06 04 40` starting from `601008` is `400406` in the little endian. So the first
 instruction of puts' PLT entry jumps to the second instruction of puts' PLT entry.
