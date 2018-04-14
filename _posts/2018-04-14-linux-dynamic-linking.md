@@ -7,6 +7,12 @@ tags: [Linux, Compiler]
 ---
 
 [Linux Internals ~ Dynamic Linking Wizardry](https://0x00sec.org/t/linux-internals-dynamic-linking-wizardry/1082)
+gives a good description of linux dynamic linking. But the post talks about 32 bit platform.
+Here I describe some parts of the post applied to x86-64 platform. My post can
+be use a complementary reading to the original post when you want to play along on x86-64 platform.
+.
+
+
 
 Programming Language Pragmatics, Fourth Edition
 1. `15.6.1 Relocation and Name Resolution`
