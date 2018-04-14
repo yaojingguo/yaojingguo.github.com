@@ -6,18 +6,16 @@ category:
 tags: [Linux, Compiler]
 ---
 
+`15.7 Dynamic Linking` of _Programming Language Pragmatics, Fourth Edition_ gives
+a high level description of linux dynamic linking. It is great treatment of the topic
+without involving much low-level details.
+
 [Linux Internals ~ Dynamic Linking Wizardry](https://0x00sec.org/t/linux-internals-dynamic-linking-wizardry/1082)
 gives a good description of linux dynamic linking. But the post talks about 32 bit platform.
 Here I describe some parts of the post applied to x86-64 platform. My post can
 be use a complementary reading to the original post when you want to play along on x86-64 platform.
-.
+. The `push GOT_main` mains `GOT[1]` which can also be referred as `GOT+8`.
 
-
-
-Programming Language Pragmatics, Fourth Edition
-1. `15.6.1 Relocation and Name Resolution`
-2. `15.7.1 Position-Independent Code`
-3. `15.7.2 Fully Dynamic (Lazy) Linking`
 
 name.c:
 ```
