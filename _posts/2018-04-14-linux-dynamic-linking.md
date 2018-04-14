@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Compiler"
-description: ""
+description: "Linux Dynamic Linking"
 category:
 tags: [Linux, Compiler]
 ---
