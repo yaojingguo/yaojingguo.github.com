@@ -8,13 +8,13 @@ tags: [Linux, Compiler]
 
 `15.7 Dynamic Linking` of _Programming Language Pragmatics, Fourth Edition_ gives
 a high level description of linux dynamic linking. It is great treatment of the topic
-without involving much low-level details.
+without involving much low-level details. One note is that the `push GOT_main` mains `GOT[1]` which can also be referred as `GOT+8`.
 
 [Linux Internals ~ Dynamic Linking Wizardry](https://0x00sec.org/t/linux-internals-dynamic-linking-wizardry/1082)
-gives a good description of linux dynamic linking. But the post talks about 32 bit platform.
+gives a good description of linux dynamic linking. But the post talks about i386 platform.
 Here I describe some parts of the post applied to x86-64 platform. My post can
 be use a complementary reading to the original post when you want to play along on x86-64 platform.
-. The `push GOT_main` mains `GOT[1]` which can also be referred as `GOT+8`.
+.
 
 
 name.c:
@@ -89,7 +89,7 @@ OFFSET           TYPE              VALUE
 0000000000601020 R_X86_64_JUMP_SLOT  __libc_start_main@GLIBC_2.2.5
 ```
 
-The  relocation type for `GOT[3]` is `R_X86_64_JUMP_SLOT`.
+`puts@GLIBC_2.2.5` is puts's GOT entry. Its type is `R_X86_64_JUMP_SLOT`.
 
 `06 04 40` starting from `601008` is `400406` in the little endian. So the first
 instruction of puts' PLT entry jumps to the second instruction of puts' PLT entry.
