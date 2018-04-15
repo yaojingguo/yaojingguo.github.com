@@ -48,3 +48,10 @@ net/ipv4/netfilter/ipt_TOS.c
 net/ipv4/netfilter/ipt_MARK.c
 net/ipv6/netfilter/ip6t_MARK.c
 ```
+
+## C++ Hacking
+
+```
+rm -fr *cscope*;find -name '*.h' -or -name '*.cc' > cscope.files; cscope -b -q
+rm cscope.files;
+```
