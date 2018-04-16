@@ -52,6 +52,5 @@ net/ipv6/netfilter/ip6t_MARK.c
 ## C++ Hacking
 
 ```
-rm -fr *cscope*;find -name '*.h' -or -name '*.cc' > cscope.files; cscope -b -q
-rm cscope.files;
+rm -fr *cscope*;find -name '*.h' -or -name '*.cc' > cscope.files; cscope -b -q;rm cscope.files;
 ```
