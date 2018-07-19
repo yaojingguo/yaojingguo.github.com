@@ -105,3 +105,6 @@ Base 64:
 - [HTTP Over TLS RFC](http://tools.ietf.org/html/rfc2818)
 - [TLS 1.2 RFC](http://tools.ietf.org/html/rfc5246)
 - [TLS Wikipedia](http://en.wikipedia.org/wiki/Transport_Layer_Security)
+
+# Resources
+- [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
