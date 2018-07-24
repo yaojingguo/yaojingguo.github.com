@@ -68,3 +68,5 @@ tcp_bbr                20480  0
 - [轻松在 VPS 搭建 Shadowsocks 翻墙 ($5/月 支付宝)](https://www.diycode.cc/topics/738)
 - [Shadowsocks 一键安装脚本（四合一）](https://teddysun.com/486.html)
 - [用Google Cloud Platform搭建Shadowsocks服务教程](http://godjose.com/2017/06/14/new-article/)
+- [Linux Kernel 4.9中TCP BBR算法的科普解释](https://blog.csdn.net/dog250/article/details/54754784)
+-[Linux Kernel 4.9 中的 BBR 算法与之前的 TCP 拥塞控制相比有什么优势？](https://www.zhihu.com/question/53559433)
