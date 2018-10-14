@@ -163,8 +163,3 @@ www.a.shifen.com.	264	IN	A	61.135.169.121
 
 # Resources
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
-```
-
-dig -p 1053 @localhost A www.xxxyyyzzz.org
-
-dig -p 1053 @localhost A www.xxxyyyzzz.org +noall +answer
