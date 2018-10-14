@@ -106,5 +106,65 @@ Base 64:
 - [TLS 1.2 RFC](http://tools.ietf.org/html/rfc5246)
 - [TLS Wikipedia](http://en.wikipedia.org/wiki/Transport_Layer_Security)
 
+# DNS
+## CoreDNS
+The following text describes how to use file plugin to serve a zone and do
+forwarding for other zones.
+
+Corefile:
+```
+xxxyyyzzz.org {
+    file xxxyyyzzz.org
+    prometheus     # enable metrics
+    errors         # show errors
+    log            # enable query logs
+}
+
+. {
+    forward . 192.168.1.1 # A vaid DNS server
+    log
+}
+```
+
+xxxyyyzzz.org:
+```
+$ORIGIN xxxyyyzzz.org.
+@	3600 IN	SOA sns.dns.icann.org. noc.dns.icann.org. (
+				2017042745 ; serial
+				7200       ; refresh (2 hours)
+				3600       ; retry (1 hour)
+				1209600    ; expire (2 weeks)
+				3600       ; minimum (1 hour)
+				)
+
+	3600 IN NS a.iana-servers.net.
+	3600 IN NS b.iana-servers.net.
+
+www     IN A     20.0.0.1
+```
+
+```
+$ dig -p 1053 @localhost www.xxxyyyzzz.org +noall +answer
+
+; <<>> DiG 9.10.6 <<>> -p 1053 @localhost www.xxxyyyzzz.org +noall +answer
+; (2 servers found)
+;; global options: +cmd
+www.xxxyyyzzz.org.	3600	IN	A	20.0.0.1
+
+$ dig -p 1053 @localhost www.baidu.com +noall +answer
+
+; <<>> DiG 9.10.6 <<>> -p 1053 @localhost www.baidu.com +noall +answer
+; (2 servers found)
+;; global options: +cmd
+www.baidu.com.		564	IN	CNAME	www.a.shifen.com.
+www.a.shifen.com.	264	IN	A	61.135.169.125
+www.a.shifen.com.	264	IN	A	61.135.169.121
+```
+
 # Resources
 - [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/)
+```
+
+dig -p 1053 @localhost A www.xxxyyyzzz.org
+
+dig -p 1053 @localhost A www.xxxyyyzzz.org +noall +answer
