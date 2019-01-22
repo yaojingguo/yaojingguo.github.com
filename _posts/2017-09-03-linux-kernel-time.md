@@ -28,12 +28,12 @@ process-load usage account and drive preemption.
 Local timer device:
 - APIC local timer
 
-For UP machine, global timer interrupt calls update_process_times. For SMP
-machine, local timer interrupts call update_process_times.
+For UP machine, global timer interrupt calls `update_process_times`. For SMP
+machine, local timer interrupts call `update_process_times`.
 
-update_process_times calls scheduler_tick which calls task_tick. For CFS
-schedule class, it is task_tick_fair which callls entity_tick. entity_tick calls
-update_curr and resched_task.
+`update_process_times` calls `scheduler_tick` which calls `task_tick`. For CFS
+schedule class, it is `task_tick_fair` which callls` entity_tick`. `entity_tick` calls
+`update_curr `and `resched_task`.
 
 
 Function invocation chain:
@@ -509,7 +509,7 @@ Scheduler operation
 - Linux/Documentation/timers
 - [Why the count of IO-APIC-edge timer showed in /proc/interrupts does not change often?](http://stackoverflow.com/questions/25931134/why-the-count-of-io-apic-edge-timer-showed-in-proc-interrupts-does-not-change-o)
 
-Unread:
+- []()
 
 - [Linux 时钟管理](http://www.ibm.com/developerworks/cn/linux/l-cn-timerm/)
 - [Ingo Molnar's Response on lkml](https://lkml.org/lkml/2005/10/19/46)
