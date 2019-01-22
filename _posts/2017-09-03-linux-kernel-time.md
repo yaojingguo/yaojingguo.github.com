@@ -20,9 +20,9 @@ Global timer in preference:
 	frequency.
 - Programmable Interval Timer (PIT): embedded clock signal
 
-jiffies is updated by global timer. xtime is initialized from RTC.
-jiffies store the time passed since OS started. It is used by all the processors.
-Globbal timer is used to update jiffies. Local timer is used to update
+`jiffies` is updated by global timer. `xtime` is initialized from RTC.
+`jiffies` store the time passed since OS started. It is used by all the processors.
+Global timer is used to update `jiffies`. Local timer is used to update
 process-load usage account and drive preemption.
 
 Local timer device:
@@ -55,8 +55,8 @@ apic_timer_interrupt
 
 On a SMP machine with local APIC, global timer is only used during boot time.
 After local APIC is setup up, local timer interrupts both call
-update_process_times and update jiffies. The global timer is unused. All CPUs
-perform update_process_times. But only one CPU updates jiffies.
+`update_process_times` and update `jiffies`. The global timer is unused. All CPUs
+perform `update_process_times`. But only one CPU updates `jiffies`.
 
 The result of `cat /proc/timer_list` on a 64 bit ubuntu 14.04 machine. Kernel
 version is 3.13.
