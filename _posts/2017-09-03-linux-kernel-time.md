@@ -509,7 +509,10 @@ Scheduler operation
 - Linux/Documentation/timers
 - [Why the count of IO-APIC-edge timer showed in /proc/interrupts does not change often?](http://stackoverflow.com/questions/25931134/why-the-count-of-io-apic-edge-timer-showed-in-proc-interrupts-does-not-change-o)
 
-- []()
+[CHAPTER 15. TIMESTAMPING](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_for_real_time/7/html/reference_guide/chap-timestamping)
+[Switching clock from TSC to HPET on Linux](https://gist.github.com/tobert/8063382)
+[It's Go Time on Linux](https://blog.cloudflare.com/its-go-time-on-linux/)
+[Timers and time management in the Linux kernel. Part 6.](https://0xax.gitbooks.io/linux-insides/Timers/linux-timers-6.html)
 
 - [Linux 时钟管理](http://www.ibm.com/developerworks/cn/linux/l-cn-timerm/)
 - [Ingo Molnar's Response on lkml](https://lkml.org/lkml/2005/10/19/46)
