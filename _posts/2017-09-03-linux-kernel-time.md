@@ -498,6 +498,30 @@ Scheduler operation
 - Remove a task from runqueue
 - Pick next task from runqueue
 
+## Time Checking
+The following terminal session was done in a physical x86 server:
+```
+$ uname -a
+Linux node-4 2.6.32-431.el6.x86_64 #1 SMP Fri Nov 22 03:15:09 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+
+$ cat /etc/centos-release
+CentOS release 6.5 (Final)
+
+$ cat /etc/redhat-release
+CentOS release 6.5 (Final)
+
+$ ls /sys/devices/system/clocksource
+clocksource0
+$ cat /sys/devices/system/clocksource/clocksource0/available_clocksource
+tsc hpet acpi_pm
+$ cat /sys/devices/system/clocksource/clocksource0/current_clocksource
+tsc
+
+$ gcc clock_getres.c -lrt -o kk.out
+$ ./kk.out
+sec: 0
+nsec: 1
+```
 
 ## References
 - [xv6](http://pdos.csail.mit.edu/6.828/2014/xv6.html)
