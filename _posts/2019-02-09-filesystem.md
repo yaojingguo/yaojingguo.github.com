@@ -69,7 +69,7 @@ write involves a write of data blocks to the journal and a write of data blocks
 to its original location in filesystem.
 
 
-> commit=nrsec	(*)	Ext4 can be told to sync all its data and metadata
+> commit=nrsec	(\*)	Ext4 can be told to sync all its data and metadata
 >			every 'nrsec' seconds. The default value is 5 seconds.
 
 I guess that a `write()` will only write the data blocks and metadata
