@@ -44,6 +44,12 @@ Install shadowsocks-python:
 wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
 chmod +x shadowsocks-all.sh
 sudo ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
+
+Congratulations, Shadowsocks-Python server install completed!
+Your Server IP        :  35.187.215.123
+Your Server Port      :  9999
+Your Password         :  // password
+Your Encryption Method:  aes-256-cfb
 ```
 
 ### BBR
