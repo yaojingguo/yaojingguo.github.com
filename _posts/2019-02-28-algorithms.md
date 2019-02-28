@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Linux"
+title: "Algorithms"
 description: ""
 category:
-tags: []
+tags: [algorithms]
 ---
 {% include JB/setup %}
 
