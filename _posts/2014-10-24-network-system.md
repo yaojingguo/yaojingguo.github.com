@@ -34,6 +34,18 @@ more much widely used than RFC 1042.
 
 # TCP
 
+### Timeout
+Socket API:
+- [SO_RCVTIMEO and SO_SNDTIMEO](http://man7.org/linux/man-pages/man7/socket.7.html)
+
+[TCP](http://man7.org/linux/man-pages/man7/tcp.7.html):
+- tcp_retries1
+- tcp_retries2
+
+Java
+- [SO_TIMEOUT](https://docs.oracle.com/javase/8/docs/api/java/net/SocketOptions.html#SO_TIMEOUT)
+
+
 [TCP Flags: PSH and URG](http://packetlife.net/blog/2011/mar/2/tcp-flags-psh-and-urg/)
 
 ### Congestion Control
