@@ -3,7 +3,7 @@ layout: post
 title: "Filesystem"
 description: ""
 category:
-tags: [OS]
+tags: [os]
 ---
 {% include JB/setup %}
 
