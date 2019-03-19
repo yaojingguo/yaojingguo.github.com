@@ -3,7 +3,7 @@ layout: post
 title: "Linux Dynamic Linking"
 description: ""
 category:
-tags: [Linux, Compiler]
+tags: [linux, compiler]
 ---
 
 `15.7 Dynamic Linking` of _Programming Language Pragmatics, Fourth Edition_ gives
