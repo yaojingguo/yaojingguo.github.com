@@ -18,7 +18,6 @@ http://man7.org/linux/man-pages/man2/setsockopt.2.html
 `SO_RCVLOWAT` and `SO_SNDLOWAT` apply to all non-blocking IO such as select, poll
 refer to `UNIX Network Programming Volume 1, Third Edition: The Sockets Networking API`.
 
-
 - https://stackoverflow.com/a/45105711/431698
 - https://my.oschina.net/yangan/blog/185262
 - https://www.jianshu.com/p/d3442ff24ba6
