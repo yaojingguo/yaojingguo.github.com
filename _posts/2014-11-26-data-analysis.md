@@ -2,7 +2,7 @@
 layout: post
 title: "Data Analysis"
 description: ""
-category: 
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -14,3 +14,12 @@ http://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinki
 
 ### Cross Validation
 - http://www.ling.upenn.edu/~clight/chisquared.htm
+
+### MapReduce
+> mapreduce.tasktracker.map.tasks.maximum
+> mapreduce.tasktracker.reduce.tasks.maximum
+> mapreduce.job.reduces
+
+- [RehashPartitioner](https://github.com/apache/hadoop/blob/trunk/hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/lib/partition/RehashPartitioner.java)
+
+`org.apache.hadoop.mapreduce.lib` is the new API.
