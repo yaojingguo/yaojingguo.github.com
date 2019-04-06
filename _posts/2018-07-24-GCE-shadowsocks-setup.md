@@ -52,6 +52,10 @@ Your Password         :  // password
 Your Encryption Method:  aes-256-cfb
 ```
 
+### Configuration
+The configuration file for `Shadowsocks-Python` is `/etc/shadowsocks-python/config.json`.
+Just edit the file and reboot. The new configuration takes effect.
+
 ### BBR
 Add the following content to `sysctl -p`:
 ```
