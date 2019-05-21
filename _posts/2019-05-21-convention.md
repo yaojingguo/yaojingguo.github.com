@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Go"
+title: "Convention"
 description: ""
 category:
 tags: [convention]
