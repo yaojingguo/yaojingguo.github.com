@@ -93,3 +93,56 @@ subject line, it is used without any conversion.
 
 ## References
 - [Linux kernel coding style](https://www.kernel.org/doc/html/v4.10/process/coding-style.html)
+
+# Mail
+For the line width, there is no hard rule for linux kernel mail list.
+
+Linus:
+- [Linux 4.19-rc4 released, an apology, and a maintainership note](https://lkml.org/lkml/2018/9/16/167)
+```
+having screwed up my calendar, but honestly, I was mostly hopeful that
+I
+```
+```
+>>> len("having screwed up my calendar, but honestly, I was mostly hopeful that")
+70
+```
+
+Width is at most 72.
+
+- [Re: Availability of kdb](https://lkml.org/lkml/2000/9/6/65)
+```
+>>> len("sources. At the meaning of things. Without a debugger, you basically have")
+73
+```
+```
+of reactions to that: you start being careful, or you start whining about
+a kernel debugger.
+```
+```
+>>> len("of reactions to that: you start being careful, or you start whining about")
+73
+```
+- [Re: [BREAKAGE] Since 4.18, kernel sets SB_I_NODEV implicitly on userns mounts, breaking systemd-nspawn](https://lkml.org/lkml/2018/12/22/221)
+```
+>>> len("The fact that you tried to several times claim it was buggy user space")
+70
+```
+
+G-H:
+- [Re: The most insane proposal in regard to the Linux kernel development share](https://lkml.org/lkml/2016/4/7/423)
+```
+>>> len("operating system's drivers _because_ of our development model.  You wish")
+72
+```
+
+https://news.ycombinator.com/item?id=7994190
+> Many plaintext clients default to 72 to allow room for multiple levels of quoting.
+
+http://kb.mozillazine.org/Plain_text_e-mail_-_Thunderbird says:
+> You can use mailnews.wraplength to change the line length for messages you compose (defaults to 72 characters), mail.compose.wrap_to_window_width to wrap to the window width when composing a message (defaults to false) and mail.wrap_long_lines to control the wrapping of long lines (defaults to true).
+
+I use 72 for line width.
+
+Wrap effect of LKML web page:
+https://lkml.org/lkml/2019/5/20/1845
