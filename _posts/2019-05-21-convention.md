@@ -146,3 +146,40 @@ I use 72 for line width.
 
 Wrap effect of LKML web page:
 https://lkml.org/lkml/2019/5/20/1845
+
+# Tense in Issue and PR
+# Tense
+Us tense as normal English writing.
+
+RocksDB issues reported by Peter Mattis：
+- [storage: unable to down-replicate from stores not present in StorePool #34187](https://github.com/cockroachdb/cockroach/issues/34187)
+- [gossip: gossiped infos should always take precedence over a previous incarnation's #30031](https://github.com/cockroachdb/cockroach/issues/30031)
+- [gossip: local infostore can diverge from remote infostore at startup #29992](https://github.com/cockroachdb/cockroach/issues/29992)
+
+RocksDB issues reported by Ben Darnell：
+- [server: Improve Setrlimit error handling #37685](https://github.com/cockroachdb/cockroach/issues/37685)
+
+[RocksDB issues reported by Ben Darnell](https://github.com/facebook/rocksdb/issues?utf8=%E2%9C%93&q=+is%3Aissue+author%3Abdarnell+)
+Past sense examples:
+- [Data corruption in 5.9 (possibly related to range deletion) #3169](https://github.com/facebook/rocksdb/issues/3169)
+- [Clarify warning on `use_fsync` #3410](https://github.com/facebook/rocksdb/issues/3410)
+
+Present perfect sense:
+- [Default value for `max_manifest_file_size` #3851](https://github.com/facebook/rocksdb/issues/3851)
+
+[RocksDB issues reported by Peter Mattis](https://github.com/golang/go/issues?utf8=%E2%9C%93&q=+is%3Aissue+author%3Apetermattis):
+- [DeleteRange related bug? #1778](https://github.com/facebook/rocksdb/issues/1778)
+- [data corruption issue with RocksDB 4.9, maybe fixed by 4.11.2 #1370](https://github.com/facebook/rocksdb/issues/1370)
+- [Range tombstones can create excessively large compactions #3977](https://github.com/facebook/rocksdb/issues/3977)
+
+[Golang issues reported by Peter Mattis](https://github.com/golang/go/issues?utf8=%E2%9C%93&q=+is%3Aissue+author%3Apetermattis):
+- [runtime: network blips during concurrent GC #20457](https://github.com/golang/go/issues/20457)
+- [runtime: gobytes() initializes allocated memory unnecessarily #23634](https://github.com/golang/go/issues/23634)
+
+# Capitalization
+`sample-acmlarge.pdf` in [acmart-master.zip](https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart-master.zip) says:
+> The title of your work should use capital letters appropriately - https://capitalizemytitle.com/ has useful rules for
+capitalization.
+
+- [Rules for Capitalization in Titles of Articles](https://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html)
+- [https://capitalizemytitle.com/](https://capitalizemytitle.com/)
