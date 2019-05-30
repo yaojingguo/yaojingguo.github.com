@@ -7,6 +7,18 @@ tags: []
 ---
 {% include JB/setup %}
 
+# Checksum
+- Ethernet has a CRC check
+- TCP has a checksum header field for header and text
+- IP Header has checksum header field.
+- Kafka message has a CRC32 field.
+
+References:
+ - RFC 793
+ - RFC 791
+ - [Ethernet frame - Frame check sequence](https://en.wikipedia.org/wiki/Ethernet_frame#Frame_check_sequence)
+- [Kafka Message Sets](https://cwiki.apache.org/confluence/display/KAFKA/A+Guide+To+The+Kafka+Protocol#AGuideToTheKafkaProtocol-Messagesets)
+
 # Ethernet
 ## RFC 894 vs RFC 1042
 _2.2 Ethernet and IEEE 802 Encapsulation_ of _TCP/IP Illustrated, Vol. 1: The
@@ -29,6 +41,7 @@ Ethernet II frame means a RFC 894 frame. [Ethernet_frame][1] also says:
 IEEE 802.2 LLC SAP/SNAP frames are RFC 1042 frame. So it seems that RFC 894 is
 more much widely used than RFC 1042.
 
+- RFC 2464: Requirements for Internet Hosts -- Communication Layers
 
   [1]: https://en.wikipedia.org/wiki/Ethernet_frame "Ethernet_frame"
 
