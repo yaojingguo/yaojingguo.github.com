@@ -183,3 +183,12 @@ capitalization.
 
 - [Rules for Capitalization in Titles of Articles](https://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html)
 - [https://capitalizemytitle.com/](https://capitalizemytitle.com/)
+
+# Hexadecimal Literal
+https://golang.org/pkg/encoding/hex/#EncodeToString' returns lowercase hexadecimal.
+java.lang.Long.toHexString()'s result lowercase hexadecimal.
+
+I checked the linux kernel source code. Both lowercase and upppercase are used.
+I personally used `0x` followed by uppercase hexadecimal.
+
+`0xab` is easy for typing. `0xAB` is easy for reading.
